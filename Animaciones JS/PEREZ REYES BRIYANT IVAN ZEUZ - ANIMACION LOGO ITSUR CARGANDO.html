@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #engrane{
+            background-image: url("ECompleto.png");
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            background-size: contain;
+            background-repeat: no-repeat;
+            animation-name: giro;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            
+            }
+
+            @keyframes giro {
+                from{
+                transform: rotate(0deg) ;
+
+            }
+            to{
+                transform: rotate(360deg) ;
+
+            }
+                
+            }
+            #logo{
+            margin-top: 8px;
+            background-image: url("LCompleto.png");
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            }
+
+
+    </style>
+</head>
+<body>
+    hola
+    <div id="engrane">
+    </div>
+    <div id="logo">
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--REALIZADO POR BRIYANT IVAN ZEUZ PEREZ REYES - S16120265-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - Rostro</title>
+    
+    <style>
+        .ojo{
+            width: 111px;
+            height: 150px;
+            border: 5px solid black;
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            
+        }
+        #ojoIzq{
+            transform: rotate(-7deg);
+            
+        }
+        #ojoDer{
+            transform: rotate(5deg);
+            margin-left: 145px;
+            height: 140px;
+
+        }
+        .parpado{ 
+            background: #FFF;
+            border: 3px solid black;
+            width: 220px;
+            height: 220px;
+            border-radius: 80%;
+            margin-top: -170px;
+            margin-left: -59px;
+            position: absolute;
+            animation-name: parpadear;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 1.5s;
+        }
+        .parpado:hover{
+            animation-play-state: paused;
+        }
+        .centro{
+            position: absolute;
+            width: 55px;
+            height: 75px;
+            background: black;
+            border-radius: 50%;
+            margin-top: 60px;
+            margin-left: 35px;
+            animation-name: mirar;
+            animation-duration: 5s;
+        }
+        #centroDer{
+            width: 50px;
+            height: 70px;
+            margin-top: 63px;
+            margin-left: 37px;
+        }
+        .brillo{
+            background: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 100%;
+            
+        }
+        #brilloIzq{
+            margin-left: 25px;
+            margin-top: 4px;
+        }
+        #brilloDer{
+            margin-left: 20px;
+            margin-top: 3px;
+
+        }
+        .boca{
+            position: absolute;
+            overflow: hidden;
+            margin-top: 190px;
+            border: 3px solid black;
+            width: 170px;
+            background: darkred;
+            margin-left: 50px;
+            border-bottom-left-radius: 90px;
+            border-bottom-right-radius: 90px;
+            animation-name: abrirBoca;
+            animation-duration: 3s;
+            animation-delay: 4s;
+            animation-fill-mode: forwards;
+        }
+        .boca div{
+            position: absolute;
+            width: 55px;
+            height: 75px;
+            background: black;
+            border-radius: 50%;
+            margin-top: 40px;
+            margin-left: 55px;
+            border:3px solid darkred;
+            
+
+        }
+        @keyframes parpadear {
+            65%{
+                margin-top: -170px;
+            }
+            100%{
+                margin-top: -73px;
+            }
+        }
+        @keyframes mirar {
+    0%{
+        margin-left: 35px;
+    }
+    20%{
+        margin-left: 0px;
+    }
+    40%{
+        margin-left: 0px;
+    }
+    70%{
+        margin-left: 60px;
+    }
+    80%{
+        margin-left: 60px;
+    }
+    100%{
+        margin-left: 35px;
+    }
+
+    
+}
+@keyframes abrirBoca {
+        0%{
+            height: 0px;
+        }   
+        100%{
+            height: 60px;
+        } 
+    }
+    
+
+        
+    </style>
+</head>
+<body>
+    <!--Creando una animacion de un rostro animado con ojos-->
+
+    <div class="ojo" id="ojoIzq">
+        <div class="centro" id="centroIzq">
+            <div class="brillo" id="brilloIzq">
+            </div>
+        </div>
+        <div class="parpado" id="parpadoIzq"></div>
+    </div>
+
+     <div class="ojo" id="ojoDer">
+        <div class="centro" id="centroDer">
+            <div class="brillo" id="brilloDer">
+            </div>
+        </div>
+        <div class="parpado" id="parpadoDer"></div>
+    </div>
+
+    <div class="boca">
+        <div class="lenguaParte1"></div>
+        <div style="margin-left: 70px;"></div>
+    </div>
+
+
+
+</body>
+</html>

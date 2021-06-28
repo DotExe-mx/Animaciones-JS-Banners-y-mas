@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!--Realizado por BRIYANT IVAN ZEUZ PEREZ REYES - S16120265-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacion Logo - BRIYANT IVAN ZEUZ PEREZ REYES</title>
+    <style>
+
+        div{
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+        #engrane{
+            background-image: url(EngraneDoradoCompleto.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            animation: animarEngrane,desaparecerEngrane;
+            animation-delay: 0.2s,2s;
+            animation-duration: 2s,2s;
+            animation-fill-mode: forwards;
+      }
+        @keyframes animarEngrane {
+            from{
+                transform: rotate(0deg);
+                   
+            }
+            to{
+                transform: rotate(360deg);
+              
+            }
+        }
+        @keyframes desaparecerEngrane {
+            from{
+                opacity: 1;
+            }
+            to{
+                opacity: 0;
+            }
+            
+        }
+        #borde{
+            background-image: url(FondoDoradoBorde.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 200px;
+            height: 200px;
+            opacity: 0;
+            position: absolute;
+            animation-name: cambioFondoBorde;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes cambioFondoBorde {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+
+            }
+            
+        }
+        #engraneVerde{
+            background-image: url(EngraneVerdeFinal.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 200px;
+            height: 200px;
+            opacity: 0;
+            position: absolute;
+            animation-name: cambioEngraneVerde;
+            animation-duration: 2s;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes cambioEngraneVerde {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+
+            }
+        }
+        #letras{
+            background-image: url(Letras.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            transform: scale(0);
+            animation-name: animacionLetras;
+            animation-fill-mode: forwards;
+            animation-duration: 0.5s;
+            animation-delay: 4s;
+        }
+        @keyframes animacionLetras {
+            0%{
+                transform: scale(0);
+            }
+            10%{
+                transform: scale(0.5);
+            }
+            20%{
+                transform: scale(1);
+            }
+            30%{
+                transform: scale(1.5);
+            }
+            40%{
+                transform: scale(1.7);
+            }
+            50%{
+                transform: scale(2);
+            }
+            60%{
+                transform: scale(1.7);
+            }
+            70%{
+                transform: scale(1.5);
+            }
+            80%{
+                transform: scale(1.3);
+            }
+            90%{
+                transform: scale(1.2);
+            }
+            100%{
+                transform: scale(1);
+            }
+            
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="engrane">
+
+    </div>
+    <div id="borde">
+
+    </div>
+    <div id="engraneVerde"></div>
+    <div id="letras"></div>
+
+    
+</body>
+</html>
